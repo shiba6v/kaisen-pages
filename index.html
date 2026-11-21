@@ -2,6 +2,24 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <script>
+    if (location.origin === 'https://shiba6v.github.io' && location.pathname.startsWith('/kaisen-pages/')) {
+      const measurementId = 'G-BG360XV4DK';
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', measurementId, {
+        cookie_prefix: 'kaisen_pages',
+        cookie_path: '/kaisen-pages/',
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+      const tag = document.createElement('script');
+      tag.async = true;
+      tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+      document.head.append(tag);
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="HKkQtZSw3ogYHX0KD9ibaBpnoSSpa70UxVWuYJtYvQc">
   <meta name="apple-itunes-app" content="app-id=6837671329">
@@ -201,6 +219,7 @@
           光回線ノート
         </a>
         <p class="footer-note">物件の光回線を契約前に調べるiPhone・iPadアプリです。</p>
+        <p class="footer-note">このサイトはアクセス解析にGoogle Analyticsを使用しています。<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Googleによるデータの取り扱い</a></p>
       </div>
       <nav class="footer-links" aria-label="規約とお問い合わせ">
         <ul>
